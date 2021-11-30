@@ -1,0 +1,2 @@
+C:\Users\docencia\Desktop\Micrium\Software\Evalboards\Microsoft\Windows\OS3\Visual Studio\Debug\OS3.exe
+C:\Users\docencia\Desktop\Micrium\Software\Evalboards\Microsoft\Windows\OS3\Visual Studio\Debug\OS3.pdb

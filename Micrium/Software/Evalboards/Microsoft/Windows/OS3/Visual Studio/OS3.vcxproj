@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{607B3CCD-476B-4631-835B-BF832BF765D4}</ProjectGuid>
+    <RootNamespace>OS3</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>..\;..\..\BSP;..\..\BSP\CPU;..\..\..\..\..\uC-CPU;..\..\..\..\..\uC-CPU\Win32\Visual Studio;..\..\..\..\..\uC-LIB;..\..\..\..\..\uCOS-III\Source;..\..\..\..\..\uCOS-III\Ports\Win32\Visual Studio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\uC-CPU\cpu_core.c" />
+    <ClCompile Include="..\..\..\..\..\uC-CPU\Win32\Visual Studio\cpu_c.c" />
+    <ClCompile Include="..\..\..\..\..\uC-LIB\lib_ascii.c" />
+    <ClCompile Include="..\..\..\..\..\uC-LIB\lib_math.c" />
+    <ClCompile Include="..\..\..\..\..\uC-LIB\lib_mem.c" />
+    <ClCompile Include="..\..\..\..\..\uC-LIB\lib_str.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Ports\Win32\Visual Studio\os_cpu_c.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_cfg_app.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_core.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_dbg.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_flag.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_int.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_mem.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_msg.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_mutex.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_pend_multi.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_prio.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_q.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_sem.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_stat.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_task.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_tick.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_time.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_tmr.c" />
+    <ClCompile Include="..\..\..\..\..\uCOS-III\Source\os_var.c" />
+    <ClCompile Include="..\..\BSP\bsp.c" />
+    <ClCompile Include="..\..\BSP\CPU\cpu_bsp.c" />
+    <ClCompile Include="..\app.c" />
+    <ClCompile Include="..\os_app_hooks.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\uC-CPU\cpu_cache.h" />
+    <ClInclude Include="..\..\..\..\..\uC-CPU\cpu_core.h" />
+    <ClInclude Include="..\..\..\..\..\uC-CPU\cpu_def.h" />
+    <ClInclude Include="..\..\..\..\..\uC-CPU\Win32\Visual Studio\cpu.h" />
+    <ClInclude Include="..\..\..\..\..\uC-LIB\lib_ascii.h" />
+    <ClInclude Include="..\..\..\..\..\uC-LIB\lib_def.h" />
+    <ClInclude Include="..\..\..\..\..\uC-LIB\lib_math.h" />
+    <ClInclude Include="..\..\..\..\..\uC-LIB\lib_mem.h" />
+    <ClInclude Include="..\..\..\..\..\uC-LIB\lib_str.h" />
+    <ClInclude Include="..\..\..\..\..\uCOS-III\Ports\Win32\Visual Studio\os_cpu.h" />
+    <ClInclude Include="..\..\..\..\..\uCOS-III\Source\os.h" />
+    <ClInclude Include="..\..\..\..\..\uCOS-III\Source\os_type.h" />
+    <ClInclude Include="..\..\BSP\bsp.h" />
+    <ClInclude Include="..\app_cfg.h" />
+    <ClInclude Include="..\cpu_cfg.h" />
+    <ClInclude Include="..\includes.h" />
+    <ClInclude Include="..\lib_cfg.h" />
+    <ClInclude Include="..\os_app_hooks.h" />
+    <ClInclude Include="..\os_cfg.h" />
+    <ClInclude Include="..\os_cfg_app.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
