@@ -5,3 +5,6 @@ This project simulates tasks and message queues on PC platform using Visual Stud
 
 ## Prerequirements
 * [Visual Studio Community](https://visualstudio.microsoft.com/es/vs/community/) (Install Desk Development with C++)
+
+## How to use
+Open the project [OS3.sln](Micrium/Software/Evalboards/Microsoft/Windows/OS3/Visual Studio/OS3.sln)
