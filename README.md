@@ -11,4 +11,4 @@ Open the project [OS3.sln](https://github.com/nataliasebastian/Micrium/blob/main
 Compile & execute [app.c](https://github.com/nataliasebastian/Micrium/blob/main/Micrium/Software/Evalboards/Microsoft/Windows/OS3/app.c)
 
 ## Results
-![](https://www.linkpicture.com/q/Screenshot-2021-12-01-at-18.47.49.png)
+<img width="608" alt="68747470733a2f2f7777772e6c696e6b706963747572652e636f6d2f712f53637265656e73686f742d323032312d31322d30312d61742d31382e34372e34392e706e67" src="https://user-images.githubusercontent.com/81468329/144704318-75588137-8363-40b6-bbf2-e904072e449d.png">
